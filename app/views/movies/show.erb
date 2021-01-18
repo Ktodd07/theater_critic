@@ -1,0 +1,7 @@
+<h1><%= @movie.title %></h1>
+<p><%= @movie.description %></p>
+<form action="/movies/<%= @movie.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button type="submit">Delete</button>
+    <%# end %>
+</form>

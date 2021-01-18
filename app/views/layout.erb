@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <title>Theater Critic</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <% if logged_in? %>
+        <div><a href="/">Home</a></div>
+        <div><a href="/reviews">Reviews</a></div>
+        <img src="https://www.freelogodesign.org/file/app/client/thumb/cbacf417-5723-44d0-9247-ddc842a19a82_200x200.png?1610774490736" alt="Logo" style="width:128px;height:128px;">
+        <div><a href="/movies">Movies</a></div>
+        <div><a href="/logout">Log Out</a></div>
+      <% else %>
+        <div><a href="/reviews">Reviews</a></div>
+        <div><a href="/movies">Movies</a></div>
+        <img src="https://www.freelogodesign.org/file/app/client/thumb/cbacf417-5723-44d0-9247-ddc842a19a82_200x200.png?1610774490736" alt="Logo" style="width:128px;height:128px;">
+        <div><a href="/signup">Sign Up</a></div>
+        <div><a href="/login">Log In</a></div>
+      <% end %>
+    </div>
+    <div class="wrapper">
+
+        <%= yield %>
+
+      <footer class="branding">
+        <small>&copy; 2021 <strong>TheaterCritic</strong></small>
+      </footer>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!--[if lt IE 7]>
+      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+      <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+    <![endif]-->
+  </body>
+</html>

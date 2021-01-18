@@ -1,0 +1,12 @@
+<h1>Edit a Review for <%= @review.movie %></h1>
+<p><%= @error %></p>
+<form action="/reviews/<%=@review.id%>" method="post">
+    <input type="hidden" name="_method" value="patch"
+    <label>Title</label>
+    <input type="text" name="review[title]" value="<%= @review.title %>">
+    <label>Movie</label>
+    <input type="text" name="review[movie]" value="<%= @review.movie %>">
+    <label>Review</label>
+    <textarea name="review[review]" rows="12" cols="50" placeholder="I like/dislike this movie because..."><%= @review.review %></textarea>
+    <button type="submit">Submit</button>
+</form>

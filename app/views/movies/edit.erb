@@ -1,0 +1,12 @@
+<h1>Edit <%= @movie.title %></h1>
+<p><%= @error %></p>
+<form action="/movies/<%=@movie.id%>" method="post">
+    <input type="hidden" name="_method" value="patch"
+    <label>Title</label>
+    <input type="text" name="movie[title]" value="<%= @movie.title %>">
+    <label>Poster</label>
+    <input type="text" name="movie[image]" value="<%= @movie.image %>">
+    <label>Description</label>
+    <textarea name="movie[description]" rows="12" cols="50" placeholder="The way the story goes..."><%= @movie.description %></textarea>
+    <button type="submit">Submit</button>
+</form>

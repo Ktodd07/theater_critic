@@ -1,0 +1,11 @@
+<h1>Submit a Review</h1>
+<p><%= @error %></p>
+<form action="/reviews" method="post">
+    <label>Title</label>
+    <input type="text" name="title"
+    <label>Movie</label>
+    <input type="text" name="movie">
+    <label>Review</label>
+    <textarea name="review" rows="12" cols="50" placeholder="I like/dislike this movie because..."></textarea>
+    <button type="submit">Submit</button>
+</form>

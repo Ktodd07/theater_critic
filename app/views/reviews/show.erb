@@ -1,0 +1,9 @@
+<h1><%= @review.title %></h1>
+<h2><%= @review.movie %></h2>
+<p><%= @review.review %></p>
+<form action="/reviews/<%= @review.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <% if @review.user == current_user %>
+        <button type="submit">Delete</button>
+    <% end %>
+</form>

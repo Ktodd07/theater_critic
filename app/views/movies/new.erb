@@ -1,0 +1,11 @@
+<h1>Submit a Movie</h1>
+<p><%= @error %></p>
+<form action="/movies" method="post">
+    <label>Title</label>
+    <input type="text" name="title"
+    <label>Poster</label>
+    <input type="text" name="image">
+    <label>Description</label>
+    <textarea name="description" rows="12" cols="50" placeholder="The way the story goes..."></textarea>
+    <button type="submit">Submit</button>
+</form>

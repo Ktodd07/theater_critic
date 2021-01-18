@@ -1,0 +1,9 @@
+<h1>Reviews</h1>
+<a href="/reviews/new">Create a Review</a>
+<% @reviews.each do |rev| %>
+    <h2><a href="/reviews/<%= rev.id %>"><%= rev.title %></a></h2>
+    <h3><%= rev.movie %></h3>
+    <% if current_user == rev.user %>
+        <a href="/reviews/<%= rev.id %>/edit">Edit</a>
+    <% end %>
+<% end %>
