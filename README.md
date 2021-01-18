@@ -17,3 +17,6 @@ bcrypt - Password hasher
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/Ktodd07/theater_critic.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
