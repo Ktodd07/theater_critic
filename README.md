@@ -16,4 +16,4 @@ sqlite3 - Database engine
 bcrypt - Password hasher
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/Ktodd07/theater_critic. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Ktodd07/theater_critic.
