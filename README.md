@@ -1,4 +1,4 @@
-Installing
+# Installing
 A step by step series of examples that tell you how to get a development env running
 
 Fork and clone the repository.
@@ -9,10 +9,11 @@ Run 'bundle install' in your terminal to install any uninstalled dependencies.
 
 Run 'shotgun' in your terminal to create a local environment to run and play with the app.
 
-Built With
+## Built With
 Sinatra - Framework
 ActiveRecord - Database management
 sqlite3 - Database engine
 bcrypt - Password hasher
-Contributing
+
+## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/Ktodd07/theater_critic. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
